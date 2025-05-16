@@ -10,9 +10,7 @@ This project forecasts Canadian interest rates using historical data and three d
 - **CIRF_Forecast_Prophet.ipynb**: Forecasts interest rates using the Prophet model.
 - **CIRF_Forecast_XGBoost.ipynb**: Forecasts interest rates using the XGBoost model.
 - **InterestRateForecast_report.pbix**: Power BI report to visualize the forecasts.
-- **data/**: Contains raw and prepared data files.
-  - `raw_data.csv`: Placeholder for downloaded data.
-  - `prepared_data.csv`: Placeholder for prepared data.
+ 
 
 ## Prerequisites
 
@@ -26,3 +24,44 @@ This project forecasts Canadian interest rates using historical data and three d
    ```bash
    git clone https://github.com/your-username/Canadian-Interest-Rate-Forecast.git
    cd Canadian-Interest-Rate-Forecast
+
+2. **Set Up a Virtual Environment (optional but recommended)**:
+  ```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+3. **Install Dependencies**:
+bash
+pip install -r requirements.txt
+
+
+## Download Data
+Run the CIRF_Downloader.ipynb notebook to download the data. This will save bond_yield.csv canadian_economic_data.csv V39050.csv V39078.csv V39079.csv
+
+## Prepare Data
+Run the CIRF_Prepare.ipynb notebook to clean and prepare the data. This will save the prepared data to df_combined.csv.
+
+## Run the Forecasting Models
+Run CIRF_Forecast_Arima.ipynb to generate forecasts using ARIMA.
+Run CIRF_Forecast_Prophet.ipynb to generate forecasts using Prophet.
+Run CIRF_Forecast_XGBoost.ipynb to generate forecasts using XGBoost.
+Each notebook will output forecasts for the period 2025-05-01 to 2025-10-01 and save plots/results.
+
+
+## Visualize in Power BI:
+Open InterestRateForecast_report.pbix in Power BI Desktop.
+Update the data source to point to the files
+Customize the report as needed.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+Copyright (c) 2025 Jonathan Liu
+
+
+
+
+
+
+
