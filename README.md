@@ -10,7 +10,9 @@ This project forecasts Canadian interest rates using historical data and three d
 - **CIRF_Forecast_Prophet.ipynb**: Forecasts interest rates using the Prophet model.
 - **CIRF_Forecast_XGBoost.ipynb**: Forecasts interest rates using the XGBoost model.
 - **InterestRateForecast_report.pbix**: Power BI report to visualize the forecasts.
+
 Report can be viewed here:
+
  https://app.powerbi.com/groups/me/reports/ab118460-fcd0-4888-a5f1-262a054b884d/fbb31a7535d4547728b7?experience=power-bi
 
 ## Prerequisites
