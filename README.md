@@ -21,12 +21,12 @@ This project forecasts Canadian interest rates using historical data and three d
 ## Setup Instructions
 
 1. **Clone the Repository**:
-   ```bash
+   bash
    git clone https://github.com/your-username/Canadian-Interest-Rate-Forecast.git
    cd Canadian-Interest-Rate-Forecast
 
 2. **Set Up a Virtual Environment (optional but recommended)**:
-  ```bash
+  bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
